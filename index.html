@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+<script src="libs/angular.min.js"></script>
+<script src="libs/angular-ui-router.min.js"></script>
+
+<!--App.js, link to file containing state, .config, and .run app functions -->     
+<script src="js/app.js"></script>
+    
+<!--CSS-->      
+<link rel="stylesheet" href="reunion.css">
+
+<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css"> 
+<meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1, maximum-scale=1" charset="utf-8">   
+<title>Smiley Family Reunion</title>
+</head>
+<!--sets the HTML document to a angularJS app call myApp -->
+<body ng-app="Reunion">
+<div class="row container-fluid">
+    
+    <!--Navigation for entire app -->
+    <nav class="navbar navbar-fixed-top navbar-default">
+        <!--Web page title and links to home page and family facebook page -->
+        <div class="container-fluid row centerAlignText navbarColor">
+            <div class='col-xs-3 col-sm-3 col-md-3 col-lg-2'><a><span><i class="fa fa-home fa-2x" aria-hidden="true"></i></span></a>
+            </div>
+            <div class='col-xs-6 col-sm-6 col-md-6 col-lg-8' >
+                Smiley, Pettus, Butler, Thompson, McCray 2017 Family Reunion
+            </div>
+            <div class='col-xs-3 col-sm-3 col-md-3 col-lg-2' ><a href='https://www.facebook.com/groups/363674350658051/' target=_blank><span><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></span></a>
+            </div>
+        </div>
+        <!--Collapseble navigation section-->
+        <div class="container-fluid navbarColor">
+            <!--Navigation links with collapseble bars-->
+            <div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle navMenuButton" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar navMenuButton"></span>
+                        <span class="icon-bar navMenuButton"></span>
+                        <span class="icon-bar navMenuButton"></span>                        
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse centerAlignText" id="myNavbar">        
+                <ul class="nav nav-stacked nav-pills navbar-nav">
+                    <!--Pay Reunion Dues & T-shirt Dropdown button -->
+                    <li class="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pay Reunion Dues<span class="caret"></span></a>          
+                        <ul class="dropdown-menu">            
+                            <li><a href="#" class="reunionDues">Reunion Fees</a></li>
+                            <li><a href="#" class="form">T-Shirts</a></li>       
+                        </ul>
+                    </li>
+                    <!-- Reunion Events button -->
+                    <li class="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reunion Events<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="fridayEventPage">Friday, July 28th</a></li>
+                            <li><a href="#" id="picnic">Saturday Morning, July 29th</a></li>
+                            <li><a href="#" id="gala">Saturday Evening,July 29th</a></li>
+                            <li><a href="#" id="brunch">Sunday Morning, July 30th</a></li>
+                            <li><a href="#" id="places">Places of Interest</a></li>
+                        </ul>
+                    </li>
+                    <!-- Hotel Information button -->
+                    <li class="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hotel Information<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="hotelListing">Hotel Listing</a></li>
+                        </ul>
+                    </li>
+                    <!-- Emergancy Contacts button -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emergency Contacts<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="#" class="emergancy">Emergency Contacts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Ui-view that displays content pages -->
+    <div class="row container-fluid">
+        <!-- Start of page viewport-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div ui-view></div>
+        </div><!--End of page viewport, center column -->
+        
+    </div><!--end of row that contains the body -->
+</div>   
+
+</body>
+</html>
