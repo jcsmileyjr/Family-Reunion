@@ -1,5 +1,11 @@
 /*fixed footer solution is navbar-fixed-bottom*/
 
+h1 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration-line: underline
+    
+}
 
 /*center align text or elements*/
 .centerAlignText {

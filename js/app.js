@@ -18,7 +18,11 @@ myApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $u
             url:'/fees',
             templateUrl: 'dues/reunionFees.html'
         })    
-    
+        //The nav state redirects the user to the tShirt.html template
+        .state('tShirt', {
+            url:'/tShirt',
+            templateUrl: 'dues/tShirt.html'
+        })      
     
 }]);
 
