@@ -67,6 +67,7 @@ body {
 /*all paragraphs have same font size*/
 p {
     font-size: 18px;
+    line-height: 1.6em;
 }
 
 
