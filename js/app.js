@@ -8,11 +8,16 @@ myApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $u
     $urlRouterProvider.otherwise('/homePage');
 
     $stateProvider
-        //The nav state redirects the user to the nav.html template and navController via the /nav url. 
+        //The nav state redirects the user to the homePage.html template  
         .state('homePage', {
             url:'/homePage',
             templateUrl: 'homePage/homePage.html'
         })
+        //The nav state redirects the user to the reunionFees.html template
+        .state('fees', {
+            url:'/fees',
+            templateUrl: 'dues/reunionFees.html'
+        })    
     
     
 }]);

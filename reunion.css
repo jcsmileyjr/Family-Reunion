@@ -1,4 +1,6 @@
 /*fixed footer solution is navbar-fixed-bottom*/
+
+
 /*center align text or elements*/
 .centerAlignText {
     text-align: center;
@@ -52,6 +54,8 @@ body {
 p {
     font-size: 16px;
 }
+
+
 
 /*Mobile or small screen*/
 @media only screen and (max-width: 500px) {
