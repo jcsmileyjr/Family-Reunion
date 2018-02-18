@@ -46,7 +46,8 @@ myApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $u
         //The nav state redirects the user to the places.html template
         .state('places', {
             url:'/places',
-            templateUrl: 'places/places.html'
+            templateUrl: 'places/places.html',
+            controller: "placesController"
         })    
     
 }]);
