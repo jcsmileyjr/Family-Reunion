@@ -22,7 +22,32 @@ myApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $u
         .state('tShirt', {
             url:'/tShirt',
             templateUrl: 'dues/tShirt.html'
-        })      
+        })
+        //The nav state redirects the user to the fridayEvent.html template
+        .state('fridayEvent', {
+            url:'/fridayEvent',
+            templateUrl: 'events/fridayEvent.html'
+        })
+        //The nav state redirects the user to the picnic.html template
+        .state('picnic', {
+            url:'/picnic',
+            templateUrl: 'events/picnic.html'
+        })
+        //The nav state redirects the user to the gala.html template
+        .state('gala', {
+            url:'/gala',
+            templateUrl: 'events/gala.html'
+        })    
+        //The nav state redirects the user to the brunch.html template
+        .state('brunch', {
+            url:'/brunch',
+            templateUrl: 'events/brunch.html'
+        })
+        //The nav state redirects the user to the places.html template
+        .state('places', {
+            url:'/places',
+            templateUrl: 'places/places.html'
+        })    
     
 }]);
 
