@@ -1,3 +1,4 @@
+/*fixed footer solution is navbar-fixed-bottom*/
 /*center align text or elements*/
 .centerAlignText {
     text-align: center;
@@ -8,7 +9,7 @@
 }
 /*right align text or elements*/
 .rightAlignText {
-    text-align: center;
+    text-align: right;
 }
 
 /*center nav links when not collapse; Tip: https://stackoverflow.com/questions/18777235/center-content-in-responsive-bootstrap-navbar*/
@@ -23,10 +24,12 @@
 .navbarColor {
     background-color: lightgreen;
 }
+
 /*royal blue solid border for icon-bars and button border in nav menu button*/
 .navMenuButton, button.navbar-toggle.navMenuButton {
     border: royalblue solid 1px;
 }
+
 /*css for nav drop down links*/
 a.dropdown-toggle {
     font-weight: bolder;
@@ -37,6 +40,17 @@ a.dropdown-toggle {
 /*Adjust the height of the nav-bar to the body of the Website*/
 body {
     padding-top: 70px;
+}
+
+/*padding and centering for grizzlies logo on homepage*/
+.topPaddingForElements {
+    padding-top: 20px;
+    display: block; /*center img*/
+    margin: auto;   /*center img*/
+}
+
+p {
+    font-size: 16px;
 }
 
 /*Mobile or small screen*/
@@ -53,5 +67,10 @@ body {
     /*Adjust the height of the nav-bar to the body of the Website */
     body {
     padding-top: 90px;
-}    
+    }    
+    
+    /*adjust paragraph font size for mobile devices*/
+    p {
+        font-size: 14px;        
+    }
 }
