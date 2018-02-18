@@ -53,6 +53,12 @@ myApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $u
         .state('hotel', {
             url:'/hotel',
             templateUrl: 'hotel/hotel.html'
+        })
+        //The nav state redirects the user to the emergency.html template
+        .state('emergency', {
+            url:'/emergency',
+            templateUrl: 'emergency/emergency.html',
+            controller: "emergencyController"
         })    
     
 }]);
